@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aladin&family=Bangers&family=Chicle&family=Lobster&family=Lobster+Two&family=Merienda+One&family=Shrikhand&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styleport.css">
+  <link rel="shortcut icon" href="faviconz.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/b1b0e70a69.js" crossorigin="anonymous"></script>
+  <title>Zek Lugones</title>
+</head>
+
+<body>
+  <header>
+    <!-- BARRA DE NAVEGACION -->
+    <!-- <a name="Inicio"></a> -->
+    <nav class="navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid navbar minav">
+        <span class="icozek"><img src="faviconz.ico" alt=""></span>
+        <a class="navbar-brand cambio" id="mititulo" href="#Inicio">Zek Lugones</a>
+        <!-- EMPIEZA RELOJ -->
+
+        <!-- <fieldset class="field"> -->
+        <div class="field">
+          <legend id="fecha"></legend>
+          <h2 id="reloj"></h2>
+        </div>
+        <!-- </fieldset> -->
+
+
+        <!-- TERMINA RELOJ -->
+
+
+        <!-- el boton funciona de hamburguesa ↓↓↓-->
+        <button id="burguer" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- burguerboton ↑↑↑ -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a id="letrazek" class="nav-link active" aria-current="page" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a id="letrazek" class="nav-link" href="#aboutmy">Acerca De Mi</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a id="letrazek" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Ejercicios
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Ejer1.html">If..Else / While</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="Ejer2.html">Funciones / Arreglos </a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="Ejer3.html">Objetos / DOM </a></li>
+              </ul>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SECCION ENCABEZADO -->
+    <section class="encabezado">
+      <div class="card" style="width: 18rem;">
+        <img src="MiFotoB.jpg" id="picz" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ezequiel Lugones</h5>
+          <p class="card-text">Estudiante de Desarrollo Web</p>
+          <a href="CV LugonesEzequiel 2022 Full.pdf" download="CV-LugonesEzequiel" id="btnE" class="btn btnz">Descargar CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO-CAROUSEL -->
+    <div class="container-z">
+
+
+      <section>
+        <a name="portfolio"></a> <!-- Anclaje -->
+        <div class="container">
+          <h1>Portfolio</h1>
+        </div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://typer-z-3000.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <img class="carousel-img" src="typerD.jpg" class="d-block w-100" alt="...">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5><a href="https://typer-z-3000.netlify.app/" target="_blank" rel="noopener noreferrer">Typer Z - 3000 / Ir </a> </h5>
+                <p>Pequeño juego para agilizar el tipeo</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="https://color-z-game.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <img class="carousel-img" src="ColorZgame.jpg" class="d-block w-100" alt="...">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5><a href="https://color-z-game.netlify.app/" target="_blank" rel="noopener noreferrer">Color Z Game / Ir</a></h5>
+                <p>Juego que consiste en adivinar el color indicado en pantalla</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="https://weather-channel-z.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <img class="carousel-img" src="WeatherChannel.jpg" class="d-block w-100" alt="...">
+              </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5><a href="https://weather-channel-z.netlify.app/" target="_blank" rel="noopener noreferrer">Weather Channel / Ir</a></h5>
+                <p>Pronostico de ciudades</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <br>
+      <hr style="border: 1px solid dimgray;margin-left: 10%;
+        margin-right: 10%;">
+      <br>
+
+      <!-- SECCION PORTFOLIO-CARDS-MAS PROYECTOS -->
+      <section>
+        <div class="container">
+
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="CargarPedidos.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-z">
+                  <h5 class="card-title"> <a href="https://cargar-pedidos-z.netlify.app/" target="_blank" rel="noopener noreferrer">Cargar Pedidos</a>
+                  </h5>
+                  <p class="card-text">En este proyecto, creamos un sistema de carga de pedidos para una librería.
+                    El programa recibe los datos de las compras y notifica al servicio de delivery para que entregue los libros a los distintos clientes.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="ToDoList.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-z">
+                  <h5 class="card-title"><a href="https://proyect-to-do-list-z.netlify.app/" target="_blank" rel="noopener noreferrer" >To Do List</a></h5>
+                  <p class="card-text">En este proyecto creamos una lista de tareas ( To Do List ). Generando la estructura con HTML, el estilo con CSS y la lógica de la aplicación web con JavaScript. El usuario tiene la posibilidad de crear, editar y borrar cada tarea</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="valorant.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-z">
+                  <h5 class="card-title"> <a href="https://panchito-z.netlify.app/" target="_blank" rel="noopener noreferrer">Arte Con CSS</a> -
+                    <a href="https://panchito-z.netlify.app/" target="_blank" rel="noopener noreferrer">LandingPage</a>
+                  </h5>
+                  <p class="card-text">En estos ejercicios, incursionamos en el mundo del arte CSS creando un rico Panchito a puro codigo, tambien una pequeña "landing page" basada en el videojuego de computadoras "Valorant".</p>
+                </div>
+              </div> 
+            </div>
+
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="mousetracker.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-z">
+                  <h5 class="card-title"><a href="https://seleccionar-fondo-z.netlify.app/" target="_blank" rel="noopener noreferrer">Seleccionar Fondo</a> - <a href="https://mouse-tracker-z.netlify.app/" target="_blank" rel="noopener noreferrer">Mouse Tracker</a></h5>
+                  <p class="card-text">En estos ejercicios creamos un programa en el que cambia el fondo de la pagina al color que el usuario le ingresa, tambien un divertido juego en el que vemos a Remi correr por la cocina.</p>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="col">
+              <div class="card h-100">
+                <img src="mijuegodecarreras.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-z">
+                  <h5 class="card-title">
+                    <a href="https://juego-de-carreras-z.netlify.app/" target="_blank" rel="noopener noreferrer">Mi juego de Carreras</a> - 
+                    <a href="https://cuanto-para-el-sabado.netlify.app/" target="_blank" rel="noopener noreferrer">Cuanto p/ el Sabado</a>
+                  </h5>
+                  <p class="card-text">En este ejercicio, creamos un divertido juego de carreras de autos. Haciendo manipulacion del DOM y utilizando Eventos. Tambien haciendo uso del objeto Date() creamos una pagina que te dice cuanto falta para el sabado!</p>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="col">
+              <div class="card h-100">
+                <img src="chucknorris.jpg" class="card-img-top" alt="...">
+                <div class="card-body card-body-z">
+                  <h5 class="card-title"><a href="https://reloj-z.netlify.app/" target="_blank" rel="noopener noreferrer">Reloj</a> - <a href="https://chuck-norriz.netlify.app/" target="_blank" rel="noopener noreferrer">Chuck Norris Site</a> </h5>
+                  <p class="card-text">En estos ejercicios creamos un reloj mediante el objeto Date(). Tambien creamos el site de chistes de Chuck Norris haciendo uso de Api Json</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+
+    <!-- SECCION ACERCA DE MI -->
+    <section> 
+      <a name="aboutmy"></a> <!-- Anclaje -->
+      <div class="container">
+        <h2 style="padding-top: 10px;">Acerca de Mi</h2>
+        <p>
+          Siempre pense en la posibilidad de crear, de alguna manera, algo que genere un impacto positivo en la sociedad. Por circunstancias de la vida me tope con el mundo de la programacion, un mundo que si bien tenia idea de su existencia no conocia sus dimensiones, el basto abanico de herramientas que posee y su capacidad de mejorar la vida de las personas.
+          Por este motivo y llevado por la premisa de que es el trabajo del futuro es que decidi aprender a programar.
+          Este portfolio, es una pequeña muestra del conocimiento adquirido hasta ahora, el cual pretendo mantener en desarrollo y actualizado con mas proyectos realizados y habilidades obtenidas todavia queda mucho por recorrer, pero como dice el proverbio "Caminante no hay camino, se hace camino al andar" 
+        </p>
+        <br>
+        <div class="row">
+          <h3>Conocimientos</h3>
+
+          <div class="col-sm-6">
+            <div class="load">Complete</div>
+            <div class="box"><img src="Sin título.png" alt=""></div>
+            <div class="box"><img src="CSS3.jpg" alt=""></div>
+            <div class="box"><img src="Unofficial_JavaScript_logo_2.svg.png" alt=""></div>
+          </div>
+        
+          
+
+          <div class="col-sm-6">
+            <div class="loading1">
+
+              <div class="loading" >Loading . . </div>  
+            </div>
+            <div class="box"><img src="Angular-js.jpg" alt=""></div>
+            <div class="box"><img src="sass-1.jpg" alt=""></div>
+            <div class="box"><img src="nodejs.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- 
+    <br>
+    <br> -->
+
+    <hr style="border: 1px solid dimgray;margin-left: 8%;
+        margin-right: 8%;">
+
+    <!-- SECCION FORMULARIO -->
+    <section>
+      <div class="container">
+        <form action="https://formspree.io/f/meqvprkl" method="POST" class="formu">
+
+          <h3>Contactame</h3>
+          <br>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea">Nombre</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="exampleFormControlTextarea"
+              placeholder="Escribe tu nombre" aria-describedby="emailHelp" required>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Correo Electronico</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1"
+              placeholder="Escribe tu email" aria-describedby="emailHelp" required>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Numero de telefono</label>
+            <input type="number" class="form-control" placeholder="Escribe tu numero" id="exampleInputPassword1"
+              name="exampleInputPassword1" required>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Mensaje:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="exampleFormControlTextarea1" rows="3"
+              placeholder="Envianos tus dudas, sugerencias o reclamos..."></textarea>
+            <small id="emailHelp" class="form-text text-muted">
+              <p>
+                La informacion brindada en el mensaje no sera compartida con nadie. Se enviara como un mail normal a mi
+                casilla de correo.
+              </p>
+            </small>
+          </div>
+          <br>
+          <button id="btnF" type="submit" class="btn btnz container">Enviar</button>
+          <br>
+          <br>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER CONTACTO-->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2>
+              Direccion
+            </h2>
+            <h5><i class="fa-solid ico-redez2 fa-house"></i>Marco Avellaneda 532</h5>
+            <h5><i class="fa-solid ico-redez2 fa-location-dot"></i>SMT - Tucuman - ARG</h5>
+            <h5><i class="fa-solid ico-redez2 fa-house"></i>CP 4000</h5>
+          </div>
+          <div class="col-sm-6">
+
+            <h2>Redes</h2>
+
+            <a href="https://www.instagram.com/zeklugones/" target="_blank" class="ico-redez" rel="noopener noreferrer">
+              <i class="fa-brands ico-redez fa-instagram"></i>
+            </a>
+            <a href="mailto:zeklugones@gmail.com" target="_blank" class="ico-redez" rel="noopener noreferrer">
+              <i class="fa-solid ico-redez fa-at"></i>
+            </a>
+            <a href="https://github.com/ZekLugones" target="_blank" class="ico-redez" rel="noopener noreferrer">
+              <i class="fa-brands ico-redez fa-github"></i>
+            </a>
+            
+            <a href="whats.html" target="_blank" class="ico-redez" rel="noopener noreferrer">
+              <i class="fa-brands ico-redez fa-whatsapp"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/alejo-ezequiel-lugones-aguero-094574224/" target="_blank" class="ico-redez" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr style="border: 1px solid dimgray;margin-left: 10%;
+        margin-right: 10%;">
+
+      <!-- FOOTER COPYRIGHT -->
+      <div class="container-fluid copy">
+
+        <h6>Copyright © ZekLugones 2022 </h6>
+      </div>
+    </footer>
+  </main>
+
+  <div class="muzic">
+   <!--  <iframe class="toalla" style="border-radius:12px" src="https://open.spotify.com/embed/album/3f5yCclf7eGCbc6VUZAXZi?utm_source=generator&theme=0autoplay=1" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
+   <iframe class="toalla" style="border-radius:12px" src="https://open.spotify.com/embed/album/3f5yCclf7eGCbc6VUZAXZi?utm_source=generator" width="40%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+   <!--  <iframe class="toalla" style="border-radius:12px" src="https://open.spotify.com/embed/album/3f5yCclf7eGCbc6VUZAXZi?utm_source=generator&theme=1" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
+</div>
+
+  <script src="mainPort.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
